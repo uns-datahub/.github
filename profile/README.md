@@ -5,8 +5,8 @@ Open-source building blocks for industrial Unified Namespace systems.
 UNS DataHub projects help TypeScript and Node-RED applications publish, process,
 archive, and query operational data through a consistent MQTT-based namespace.
 The public repositories in this organization are designed to be useful
-independently; the commercial DataHub controller and deployment tooling remain
-private.
+independently. The DataHub controller and deployment tooling are maintained in
+private repositories.
 
 ## Start here
 
