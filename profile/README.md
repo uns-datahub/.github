@@ -2,11 +2,13 @@
 
 Open-source building blocks for industrial Unified Namespace systems.
 
+**Website:** [www.uns-datahub.com](https://www.uns-datahub.com)
+
 UNS DataHub projects help Python, TypeScript and Node-RED applications publish, process,
 archive, and query operational data through a consistent MQTT-based namespace.
 The public repositories in this organization are designed to be useful
-independently. The DataHub controller and deployment tooling are maintained in
-private repositories.
+independently. Visit the website for the complete project map, architecture,
+and current roadmap.
 
 ## Start here
 
@@ -37,6 +39,20 @@ Producers and Node-RED
 Each repository documents its own prerequisites, configuration, and verification
 commands. For a first look, use `rtt-demo-app` as the example application and
 `uns-kit` as the library reference.
+
+## Roadmap
+
+The open stack is planned to expand with:
+
+- `uns-datahub-controller` — the central controller and embedded UI.
+- `uns-bridge-mqtt` — mapping external MQTT payloads into a governed UNS.
+- `uns-bridge-opcua` — mapping OPC UA nodes and values into the same model.
+
+`uns-assistant-runtime`, including the `uns-rag` retrieval capability, is planned
+as a subscription offering around the open stack. These repositories remain
+private while the release and subscription model are being prepared.
+
+Follow the latest overview at [www.uns-datahub.com](https://www.uns-datahub.com/#roadmap).
 
 ## Participate
 
