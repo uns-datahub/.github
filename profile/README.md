@@ -69,9 +69,7 @@ The open stack is planned to expand with:
 - `uns-bridge-mqtt` — mapping external MQTT payloads into a governed UNS.
 - `uns-bridge-opcua` — mapping OPC UA nodes and values into the same model.
 
-`uns-assistant-runtime`, including the `uns-rag` retrieval capability, is planned
-as a subscription offering around the open stack. These repositories remain
-private while the release and subscription model are being prepared.
+Assistant capabilities are planned for a later phase. More details will follow when the direction is ready.
 
 Follow the latest overview at [www.uns-datahub.com](https://www.uns-datahub.com/#roadmap).
 
