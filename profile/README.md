@@ -34,7 +34,7 @@ The controller remains a component of the runtime architecture; the planned
 public-facing distribution is `uns-datahub-runtime`, rather than a standalone
 `uns-datahub-controller` release.
 
-Interested in early access or collaboration? [Contact us](mailto:aljosa.vister@gmail.com?subject=UNS%20DataHub%20Runtime%20early%20access).
+Interested in early access? [Join the email-only notification list](https://www.uns-datahub.com/#early-access).
 
 | Repository | Purpose |
 | --- | --- |
