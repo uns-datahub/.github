@@ -10,35 +10,43 @@ The public repositories in this organization are designed to be useful
 independently. Visit the website for the complete project map, architecture,
 and current roadmap.
 
+## Choose your SDK
+
+| Language | Package | Use it for |
+| --- | --- | --- |
+| TypeScript | [`@uns-kit/*`](https://www.npmjs.com/org/uns-kit) | Typed UNS applications, runtime services, metadata, and project scaffolding |
+| Python | [`uns-kit`](https://pypi.org/project/uns-kit/) | Python UNS MQTT clients, runtime services, DataHub access, and project scaffolding |
+
+Both SDKs are developed in the public [`uns-kit`](https://github.com/uns-datahub/uns-kit)
+repository. The Python source and documentation live in
+[`packages/uns-py`](https://github.com/uns-datahub/uns-kit/tree/master/packages/uns-py).
+
 ## Start here
 
 | Repository | Purpose |
 | --- | --- |
-| [`uns-kit`](https://github.com/uns-datahub/uns-kit) | TypeScript toolkit, runtime libraries, and project scaffolding for UNS applications |
+| [`uns-kit`](https://github.com/uns-datahub/uns-kit) | TypeScript and Python toolkits, runtime libraries, and project scaffolding for UNS applications |
 | [`rtt-demo-app`](https://github.com/uns-datahub/rtt-demo-app) | Hot rolling mill simulator and end-to-end example built with `@uns-kit` |
 | [`uns-archiver`](https://github.com/uns-datahub/uns-archiver) | QuestDB archiver for UNS data and table packets |
 | [`uns-api-global`](https://github.com/uns-datahub/uns-api-global) | Authenticated REST API for current and historical UNS data |
 | [`node-red-contrib-uns`](https://github.com/uns-datahub/node-red-contrib-uns) | Node-RED nodes for subscribing to and publishing UNS messages |
 
-Published JavaScript packages are available from the
-[`@uns-kit` organization on npm](https://www.npmjs.com/org/uns-kit).
-
 ## How the pieces fit
 
 ```text
-Producers and Node-RED
-          |
-          v
-     MQTT / UNS
-       |     |
-       |     +----> UNS applications built with @uns-kit
-       |
-       +----------> UNS Archiver ----> QuestDB ----> UNS API Global
+TypeScript, Python and Node-RED producers
+                  |
+                  v
+             MQTT / UNS
+               |     |
+               |     +----> UNS applications built with @uns-kit or uns-kit
+               |
+               +----------> UNS Archiver ----> QuestDB ----> UNS API Global
 ```
 
 Each repository documents its own prerequisites, configuration, and verification
 commands. For a first look, use `rtt-demo-app` as the example application and
-`uns-kit` as the library reference.
+`uns-kit` as the TypeScript and Python library reference.
 
 ## Roadmap
 
