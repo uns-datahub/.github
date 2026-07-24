@@ -23,6 +23,19 @@ repository. The Python source and documentation live in
 
 ## Start here
 
+### Coming next: UNS DataHub Runtime
+
+`uns-datahub-runtime` will be the key public entry point that brings the complete
+stack together: the controller, local infrastructure, configuration, and
+lifecycle tooling in one deployable runtime. We are preparing it for public
+release.
+
+The controller remains a component of the runtime architecture; the planned
+public-facing distribution is `uns-datahub-runtime`, rather than a standalone
+`uns-datahub-controller` release.
+
+Interested in early access or collaboration? [Contact us](mailto:aljosa.vister@gmail.com?subject=UNS%20DataHub%20Runtime%20early%20access).
+
 | Repository | Purpose |
 | --- | --- |
 | [`uns-kit`](https://github.com/uns-datahub/uns-kit) | TypeScript and Python toolkits, runtime libraries, and project scaffolding for UNS applications |
@@ -52,7 +65,7 @@ commands. For a first look, use `rtt-demo-app` as the example application and
 
 The open stack is planned to expand with:
 
-- `uns-datahub-controller` — the central controller and embedded UI.
+- `uns-datahub-runtime` — the deployable public entry point that connects the controller, local infrastructure, configuration, and lifecycle tooling.
 - `uns-bridge-mqtt` — mapping external MQTT payloads into a governed UNS.
 - `uns-bridge-opcua` — mapping OPC UA nodes and values into the same model.
 
