@@ -6,8 +6,8 @@ Open-source building blocks for industrial Unified Namespace systems.
 
 UNS DataHub projects help Python, TypeScript and Node-RED applications publish, process,
 archive, and query operational data through a consistent MQTT-based namespace.
-The public repositories in this organization are designed to be useful
-independently. Visit the website for the complete project map, architecture,
+The public repositories in this organization are designed to cover distinct
+roles in a complete flow. Visit the website for the project map, architecture,
 and current roadmap.
 
 ## Choose your SDK
@@ -23,18 +23,36 @@ repository. The Python source and documentation live in
 
 ## Start here
 
-### Coming next: UNS DataHub Runtime
+### Private preview: UNS DataHub Runtime
 
-`uns-datahub-runtime` will be the key public entry point that brings the complete
+`uns-datahub-runtime` is the planned public entry point that brings the complete
 stack together: the controller, local infrastructure, configuration, and
-lifecycle tooling in one deployable runtime. We are preparing it for public
-release.
+lifecycle tooling in one deployable runtime. It is currently available as a
+private preview.
 
-The controller remains a component of the runtime architecture; the planned
+Users with preview access can install the public, version-matched bootstrap on
+macOS or Linux:
+
+```sh
+curl -fsSL \
+  https://github.com/uns-datahub/uns-datahub-bootstrap/releases/latest/download/install.sh |
+  sh
+
+"$HOME/.local/bin/uns-bootstrap" install
+```
+
+The bootstrap verifies the matching download and starts the setup wizard.
+Docker or Podman with Compose is required. Complete installation and operating
+instructions are in the Runtime `README.md` included with the downloaded
+bundle.
+
+[Review the public bootstrap repository](https://github.com/uns-datahub/uns-datahub-bootstrap).
+Need preview access?
+[Join the email-only access list](https://www.uns-datahub.com/#early-access).
+
+The controller remains a component of the Runtime architecture; the planned
 public-facing distribution is `uns-datahub-runtime`, rather than a standalone
 `uns-datahub-controller` release.
-
-Interested in early access? [Join the email-only notification list](https://www.uns-datahub.com/#early-access).
 
 | Repository | Purpose |
 | --- | --- |
@@ -43,6 +61,7 @@ Interested in early access? [Join the email-only notification list](https://www.
 | [`uns-archiver`](https://github.com/uns-datahub/uns-archiver) | QuestDB archiver for UNS data and table packets |
 | [`uns-api-global`](https://github.com/uns-datahub/uns-api-global) | Authenticated REST API for current and historical UNS data |
 | [`node-red-contrib-uns`](https://github.com/uns-datahub/node-red-contrib-uns) | Node-RED nodes for subscribing to and publishing UNS messages |
+| [`uns-datahub-bootstrap`](https://github.com/uns-datahub/uns-datahub-bootstrap) | Minimal verified installer for version-matched Runtime releases |
 
 ## How the pieces fit
 
@@ -57,19 +76,21 @@ TypeScript, Python and Node-RED producers
                +----------> UNS Archiver ----> QuestDB ----> UNS API Global
 ```
 
-Each repository documents its own prerequisites, configuration, and verification
-commands. For a first look, use `rtt-demo-app` as the example application and
-`uns-kit` as the TypeScript and Python library reference.
+Each public component repository documents its own prerequisites,
+configuration, and verification commands. For a first look at the open
+components, use `rtt-demo-app` as the example application and `uns-kit` as the
+TypeScript and Python library reference.
 
 ## Roadmap
 
 The open stack is planned to expand with:
 
-- `uns-datahub-runtime` — the deployable public entry point that connects the controller, local infrastructure, configuration, and lifecycle tooling.
+- `uns-datahub-runtime` — currently a private preview and planned as the deployable public entry point that connects the controller, local infrastructure, configuration, and lifecycle tooling.
 - `uns-bridge-mqtt` — mapping external MQTT payloads into a governed UNS.
 - `uns-bridge-opcua` — mapping OPC UA nodes and values into the same model.
 
-Assistant capabilities are planned for a later phase. More details will follow when the direction is ready.
+Assistant capabilities are planned for a later phase. More details will follow
+when the direction is ready.
 
 Follow the latest overview at [www.uns-datahub.com](https://www.uns-datahub.com/#roadmap).
 
