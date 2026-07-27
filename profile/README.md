@@ -46,6 +46,7 @@ Docker or Podman with Compose is required. Complete installation and operating
 instructions are in the Runtime `README.md` included with the downloaded
 bundle.
 
+[Open Runtime documentation](https://www.uns-datahub.com/docs/).
 [Review the public bootstrap repository](https://github.com/uns-datahub/uns-datahub-bootstrap).
 Need preview access?
 [Join the email-only access list](https://www.uns-datahub.com/#early-access).
