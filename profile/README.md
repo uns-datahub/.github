@@ -34,7 +34,9 @@ configuration, and lifecycle tooling in one deployable environment. Typed secret
 references can resolve from environment variables or optionally from Infisical,
 including Machine Identity-backed bootstrap. The add-on catalog can combine
 compatible public GitHub add-ons with approved services from configured GitHub
-or Azure DevOps sources.
+or Azure DevOps sources. Runtime also validates service configuration against
+packaged schemas, retains per-instance snapshots, and preflights matching
+versions and configuration before starting workloads on another controller.
 
 The SDKs, supporting services, reference application, and bootstrap are public
 and available independently. The integrated Runtime is currently distributed
