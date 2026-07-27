@@ -28,9 +28,10 @@ repository. The Python source and documentation live in
 
 ### Private preview: UNS DataHub Runtime
 
-UNS DataHub Runtime is the easiest way to run the complete integrated stack
-locally. It brings together the controller, local infrastructure, setup,
-configuration, and lifecycle tooling in one deployable environment. Typed secret
+UNS DataHub Runtime is the easiest way to run the complete integrated stack on
+infrastructure you control. Its core data plane combines the controller with
+open-source PostgreSQL, Eclipse Mosquitto, QuestDB, and Caddy infrastructure and
+requires no managed cloud service. Typed secret
 references can resolve from environment variables or optionally from Infisical,
 including Machine Identity-backed bootstrap. The add-on catalog can combine
 compatible public GitHub add-ons with approved services from configured GitHub
@@ -107,7 +108,8 @@ implementation work explores cited operational guidance over live and
 historical signals, operator-reviewed schema proposals, validated TypeScript
 and Python service-bundle generation, and disabled-by-default local
 MCP-compatible tool access with scoped tokens and auditing. Public scope and
-delivery are still under review.
+delivery are still under review. The current private implementation uses
+OpenAI; provider and on-prem inference alternatives are being evaluated.
 
 Follow the latest overview at [www.uns-datahub.com](https://www.uns-datahub.com/#roadmap).
 
