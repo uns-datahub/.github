@@ -30,7 +30,9 @@ repository. The Python source and documentation live in
 
 UNS DataHub Runtime is the easiest way to run the complete integrated stack
 locally. It brings together the controller, local infrastructure, setup,
-configuration, and lifecycle tooling in one deployable environment.
+configuration, and lifecycle tooling in one deployable environment. Typed secret
+references can resolve from environment variables or optionally from Infisical,
+including Machine Identity-backed bootstrap.
 
 The SDKs, supporting services, reference application, and bootstrap are public
 and available independently. The integrated Runtime is currently distributed
