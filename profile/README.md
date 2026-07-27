@@ -4,8 +4,11 @@ Open-source building blocks for industrial Unified Namespace systems.
 
 **Website:** [www.uns-datahub.com](https://www.uns-datahub.com)
 
-UNS DataHub projects help Python, TypeScript and Node-RED applications publish, process,
-archive, and query operational data through a consistent MQTT-based namespace.
+UNS DataHub turns fragmented industrial signals into a governed, queryable
+data layer. Python, TypeScript and Node-RED applications publish, process,
+archive, and query operational data through a consistent MQTT-based namespace,
+preserving the same context for live and historical values.
+
 The public repositories in this organization are designed to cover distinct
 roles in a complete flow. Visit the website for the project map, architecture,
 and current roadmap.
@@ -25,10 +28,13 @@ repository. The Python source and documentation live in
 
 ### Private preview: UNS DataHub Runtime
 
-`uns-datahub-runtime` is the planned public entry point that brings the complete
-stack together: the controller, local infrastructure, configuration, and
-lifecycle tooling in one deployable runtime. It is currently available as a
-private preview.
+UNS DataHub Runtime is the easiest way to run the complete integrated stack
+locally. It brings together the controller, local infrastructure, setup,
+configuration, and lifecycle tooling in one deployable environment.
+
+The SDKs, supporting services, reference application, and bootstrap are public
+and available independently. The integrated Runtime is currently distributed
+through a private preview.
 
 Users with preview access can install the public, version-matched bootstrap on
 macOS or Linux:
@@ -87,7 +93,7 @@ TypeScript and Python library reference.
 The open stack is planned to expand with:
 
 - `uns-datahub-runtime` — currently a private preview and planned as the deployable public entry point that connects the controller, local infrastructure, configuration, and lifecycle tooling.
-- `uns-bridge-mqtt` — mapping external MQTT payloads into a governed UNS.
+- `uns-bridge-mqtt` — an external MQTT mapping bridge for bringing existing third-party topic structures and payloads into a governed UNS.
 - `uns-bridge-opcua` — mapping OPC UA nodes and values into the same model.
 
 Assistant capabilities are planned for a later phase. More details will follow
