@@ -96,8 +96,12 @@ The open stack is planned to expand with:
 - `uns-bridge-mqtt` — an external MQTT mapping bridge for bringing existing third-party topic structures and payloads into a governed UNS.
 - `uns-bridge-opcua` — mapping OPC UA nodes and values into the same model.
 
-Assistant capabilities are planned for a later phase. More details will follow
-when the direction is ready.
+Assistant capabilities are planned for a later phase. Current private
+implementation work explores cited operational guidance over live and
+historical signals, operator-reviewed schema proposals, validated TypeScript
+and Python service-bundle generation, and disabled-by-default local
+MCP-compatible tool access with scoped tokens and auditing. Public scope and
+delivery are still under review.
 
 Follow the latest overview at [www.uns-datahub.com](https://www.uns-datahub.com/#roadmap).
 
