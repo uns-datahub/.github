@@ -20,7 +20,7 @@ and current roadmap.
 | Language | Package | Use it for |
 | --- | --- | --- |
 | TypeScript | [`@uns-kit/*`](https://www.npmjs.com/org/uns-kit) | Typed UNS applications, runtime services, metadata, and project scaffolding |
-| Python | [`uns-kit`](https://pypi.org/project/uns-kit/) | Python UNS MQTT clients, runtime services, DataHub access, and project scaffolding |
+| Python | [`uns-kit`](https://pypi.org/project/uns-kit/) | Python UNS MQTT clients, runtime services, OpenHub access, and project scaffolding |
 
 Both SDKs are developed in the public [`uns-kit`](https://github.com/uns-datahub/uns-kit)
 repository. The Python source and documentation live in
@@ -28,9 +28,9 @@ repository. The Python source and documentation live in
 
 ## Start here
 
-### Private preview: UNS DataHub Runtime
+### Private preview: UNS OpenHub Runtime
 
-UNS DataHub Runtime is the easiest way to run the complete integrated stack on
+UNS OpenHub Runtime is the easiest way to run the complete integrated stack on
 infrastructure you control. Its core data plane combines the controller with
 open-source PostgreSQL, Eclipse Mosquitto, QuestDB, and Caddy infrastructure and
 requires no managed cloud service. Typed secret
@@ -67,8 +67,8 @@ Need preview access?
 [Join the email-only access list](https://www.uns-openhub.com/#early-access).
 
 The controller remains a component of the Runtime architecture; the planned
-public-facing distribution is `uns-datahub-runtime`, rather than a standalone
-`uns-datahub-controller` release.
+public-facing distribution is `uns-openhub-runtime`, rather than a standalone
+`uns-openhub-controller` release.
 
 | Repository | Purpose |
 | --- | --- |
@@ -101,7 +101,7 @@ TypeScript and Python library reference.
 
 The open stack is planned to expand with:
 
-- `uns-datahub-runtime` — currently a private preview and planned as the deployable public entry point that connects the controller, local infrastructure, configuration, and lifecycle tooling.
+- `uns-openhub-runtime` — currently a private preview and planned as the deployable public entry point that connects the controller, local infrastructure, configuration, and lifecycle tooling.
 - `uns-bridge-mqtt` — an external MQTT mapping bridge for bringing existing third-party topic structures and payloads into a governed UNS.
 - `uns-bridge-opcua` — mapping OPC UA nodes and values into the same model.
 
