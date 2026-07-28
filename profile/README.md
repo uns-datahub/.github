@@ -22,9 +22,9 @@ and current roadmap.
 | TypeScript | [`@uns-kit/*`](https://www.npmjs.com/org/uns-kit) | Typed UNS applications, runtime services, metadata, and project scaffolding |
 | Python | [`uns-kit`](https://pypi.org/project/uns-kit/) | Python UNS MQTT clients, runtime services, OpenHub access, and project scaffolding |
 
-Both SDKs are developed in the public [`uns-kit`](https://github.com/uns-datahub/uns-kit)
+Both SDKs are developed in the public [`uns-kit`](https://github.com/uns-openhub/uns-kit)
 repository. The Python source and documentation live in
-[`packages/uns-py`](https://github.com/uns-datahub/uns-kit/tree/master/packages/uns-py).
+[`packages/uns-py`](https://github.com/uns-openhub/uns-kit/tree/master/packages/uns-py).
 
 ## Start here
 
@@ -50,7 +50,7 @@ macOS or Linux:
 
 ```sh
 curl -fsSL \
-  https://github.com/uns-datahub/uns-datahub-bootstrap/releases/latest/download/install.sh |
+  https://github.com/uns-openhub/uns-openhub-bootstrap/releases/latest/download/install.sh |
   sh
 
 "$HOME/.local/bin/uns-bootstrap" install
@@ -62,7 +62,7 @@ instructions are in the Runtime `README.md` included with the downloaded
 bundle.
 
 [Open Runtime documentation](https://www.uns-openhub.com/docs/).
-[Review the public bootstrap repository](https://github.com/uns-datahub/uns-datahub-bootstrap).
+[Review the public bootstrap repository](https://github.com/uns-openhub/uns-openhub-bootstrap).
 Need preview access?
 [Join the email-only access list](https://www.uns-openhub.com/#early-access).
 
@@ -72,12 +72,12 @@ public-facing distribution is `uns-openhub-runtime`, rather than a standalone
 
 | Repository | Purpose |
 | --- | --- |
-| [`uns-kit`](https://github.com/uns-datahub/uns-kit) | TypeScript and Python toolkits, runtime libraries, and project scaffolding for UNS applications |
-| [`rtt-demo-app`](https://github.com/uns-datahub/rtt-demo-app) | Hot rolling mill simulator and end-to-end example built with `@uns-kit` |
-| [`uns-archiver`](https://github.com/uns-datahub/uns-archiver) | QuestDB archiver for UNS data and table packets |
-| [`uns-api-global`](https://github.com/uns-datahub/uns-api-global) | Authenticated REST API for current and historical UNS data |
-| [`node-red-contrib-uns`](https://github.com/uns-datahub/node-red-contrib-uns) | Node-RED nodes for subscribing to and publishing UNS messages |
-| [`uns-datahub-bootstrap`](https://github.com/uns-datahub/uns-datahub-bootstrap) | Minimal verified installer for version-matched Runtime releases |
+| [`uns-kit`](https://github.com/uns-openhub/uns-kit) | TypeScript and Python toolkits, runtime libraries, and project scaffolding for UNS applications |
+| [`rtt-demo-app`](https://github.com/uns-openhub/rtt-demo-app) | Hot rolling mill simulator and end-to-end example built with `@uns-kit` |
+| [`uns-archiver`](https://github.com/uns-openhub/uns-archiver) | QuestDB archiver for UNS data and table packets |
+| [`uns-api-global`](https://github.com/uns-openhub/uns-api-global) | Authenticated REST API for current and historical UNS data |
+| [`node-red-contrib-uns`](https://github.com/uns-openhub/node-red-contrib-uns) | Node-RED nodes for subscribing to and publishing UNS messages |
+| [`uns-openhub-bootstrap`](https://github.com/uns-openhub/uns-openhub-bootstrap) | Minimal verified installer for version-matched Runtime releases |
 
 ## How the pieces fit
 
@@ -117,9 +117,9 @@ Follow the latest overview at [www.uns-openhub.com](https://www.uns-openhub.com/
 
 ## Participate
 
-- Read the shared [contribution guide](https://github.com/uns-datahub/.github/blob/main/CONTRIBUTING.md).
+- Read the shared [contribution guide](https://github.com/uns-openhub/.github/blob/main/CONTRIBUTING.md).
 - Report security issues privately as described in the
-  [security policy](https://github.com/uns-datahub/.github/blob/main/SECURITY.md).
+  [security policy](https://github.com/uns-openhub/.github/blob/main/SECURITY.md).
 - Use the issue tracker of the affected repository for bugs and focused feature
   requests.
 
