@@ -1,7 +1,8 @@
 # UNS OpenHub logo assets
 
-The original `uns-open-hub.svg` remains unchanged. The files in this directory
-remove editor-specific transforms and provide production-ready variants.
+The final symbol combines a continuous `u` and `h`, with the lower counter of
+the `h` also suggesting an open `o`. The SVG files in this directory are the
+optimized, production-safe sources.
 
 ## Files
 
@@ -20,8 +21,9 @@ remove editor-specific transforms and provide production-ready variants.
 - Light: `#F4F7F5`
 
 Keep at least half the width of the vertical stem as clear space around the
-mark. Use the standalone mark at 24 px or larger. At 16 px, use the square icon
-export and avoid placing it directly on a similarly dark background.
+mark. Use the standalone mark at 24 px or larger. At 16 px, use the square
+dark-background icon so the `uh` silhouette remains legible; the open `o`
+detail is intentionally secondary at that size.
 
 The wordmark text remains editable and uses Helvetica Neue with Arial as a
 fallback. Convert the text to curves in the final design application when a
