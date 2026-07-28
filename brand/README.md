@@ -1,0 +1,28 @@
+# UNS OpenHub logo assets
+
+The original `uns-open-hub.svg` remains unchanged. The files in this directory
+remove editor-specific transforms and provide production-ready variants.
+
+## Files
+
+- `uns-openhub-mark.svg` — primary dark mark on a transparent canvas
+- `uns-openhub-mark-light.svg` — light mark for dark surfaces
+- `uns-openhub-icon.svg` — square transparent icon with safe spacing
+- `uns-openhub-icon-on-dark.svg` — mint icon on the website dark background
+- `uns-openhub-wordmark.svg` — horizontal mark with editable wordmark text
+- `png/` — raster exports at common application and web sizes
+
+## Palette
+
+- Ink: `#202020`
+- Dark surface: `#071411`
+- Mint accent: `#9CF7C6`
+- Light: `#F4F7F5`
+
+Keep at least half the width of the vertical stem as clear space around the
+mark. Use the standalone mark at 24 px or larger. At 16 px, use the square icon
+export and avoid placing it directly on a similarly dark background.
+
+The wordmark text remains editable and uses Helvetica Neue with Arial as a
+fallback. Convert the text to curves in the final design application when a
+fully outlined delivery file is required.

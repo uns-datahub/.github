@@ -1,4 +1,6 @@
-# UNS OpenHub
+<p align="center">
+  <img src="../brand/uns-openhub-wordmark.svg" alt="UNS OpenHub" width="720">
+</p>
 
 Open-source building blocks for industrial Unified Namespace systems.
 
