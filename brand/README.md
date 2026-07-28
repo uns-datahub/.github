@@ -1,8 +1,8 @@
 # UNS OpenHub logo assets
 
-The final symbol combines a continuous `u` and `h`, with the lower counter of
-the `h` also suggesting an open `o`. The SVG files in this directory are the
-optimized, production-safe sources.
+The final symbol combines the continuous `u` gesture with the rounded OpenHub
+bowl and a tall Hub stem. The SVG files in this directory are the optimized,
+production-safe sources.
 
 ## Files
 
