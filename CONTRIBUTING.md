@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping improve UNS DataHub's public projects.
+Thank you for helping improve UNS OpenHub's public projects.
 
 ## Before starting
 
