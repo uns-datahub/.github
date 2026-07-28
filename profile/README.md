@@ -2,7 +2,7 @@
 
 Open-source building blocks for industrial Unified Namespace systems.
 
-**Website:** [www.uns-datahub.com](https://www.uns-datahub.com)
+**Website:** [www.uns-openhub.com](https://www.uns-openhub.com)
 
 UNS DataHub turns fragmented industrial signals into a governed, queryable
 data layer. Python, TypeScript and Node-RED applications publish, process,
@@ -59,10 +59,10 @@ Docker or Podman with Compose is required. Complete installation and operating
 instructions are in the Runtime `README.md` included with the downloaded
 bundle.
 
-[Open Runtime documentation](https://www.uns-datahub.com/docs/).
+[Open Runtime documentation](https://www.uns-openhub.com/docs/).
 [Review the public bootstrap repository](https://github.com/uns-datahub/uns-datahub-bootstrap).
 Need preview access?
-[Join the email-only access list](https://www.uns-datahub.com/#early-access).
+[Join the email-only access list](https://www.uns-openhub.com/#early-access).
 
 The controller remains a component of the Runtime architecture; the planned
 public-facing distribution is `uns-datahub-runtime`, rather than a standalone
@@ -111,7 +111,7 @@ MCP-compatible tool access with scoped tokens and auditing. Public scope and
 delivery are still under review. The current private implementation uses
 OpenAI; provider and on-prem inference alternatives are being evaluated.
 
-Follow the latest overview at [www.uns-datahub.com](https://www.uns-datahub.com/#roadmap).
+Follow the latest overview at [www.uns-openhub.com](https://www.uns-openhub.com/#roadmap).
 
 ## Participate
 
