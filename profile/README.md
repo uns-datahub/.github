@@ -1,10 +1,10 @@
-# UNS DataHub
+# UNS OpenHub
 
 Open-source building blocks for industrial Unified Namespace systems.
 
 **Website:** [www.uns-openhub.com](https://www.uns-openhub.com)
 
-UNS DataHub turns fragmented industrial signals into a governed, queryable
+UNS OpenHub turns fragmented industrial signals into a governed, queryable
 data layer. Python, TypeScript and Node-RED applications publish, process,
 archive, and query operational data through a consistent MQTT-based namespace,
 preserving the same context for live and historical values.
