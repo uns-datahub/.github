@@ -2,48 +2,32 @@
   <img src="../brand/uns-openhub-wordmark.svg" alt="UNS OpenHub" width="720">
 </p>
 
-Open-source building blocks for industrial Unified Namespace systems.
+Open semantic context infrastructure for systems you control.
 
 **Website:** [www.uns-openhub.com](https://www.uns-openhub.com)
 
-UNS OpenHub turns fragmented industrial signals into a governed, queryable
-data layer. Python, TypeScript and Node-RED applications publish, process,
-archive, and query operational data through a consistent MQTT-based namespace,
-preserving the same context for live and historical values.
+UNS OpenHub connects events, live values, history, metadata, and relationships
+without forcing every source system into the same shape. Its controller keeps
+stable entity identity separate from namespace placement, makes lifecycle
+relationships queryable, and installs domain semantics on one generic core.
 
-The public repositories in this organization are designed to cover distinct
-roles in a complete flow. Visit the website for the project map, architecture,
-and current roadmap.
+Manufacturing and Gaming are the current concrete domain profiles. The public
+hot-rolling demo is one end-to-end example of the model, not the boundary of
+the platform.
 
-## Choose your SDK
+> The namespace shows where an object is. The graph explains how it became
+> what it is.
 
-| Language | Package | Use it for |
-| --- | --- | --- |
-| TypeScript | [`@uns-kit/*`](https://www.npmjs.com/org/uns-kit) | Typed UNS applications, runtime services, metadata, and project scaffolding |
-| Python | [`uns-kit`](https://pypi.org/project/uns-kit/) | Python UNS MQTT clients, runtime services, OpenHub access, and project scaffolding |
+## Start with the Runtime
 
-Both SDKs are developed in the public [`uns-kit`](https://github.com/uns-openhub/uns-kit)
-repository. The Python source and documentation live in
-[`packages/uns-py`](https://github.com/uns-openhub/uns-kit/tree/master/packages/uns-py).
+UNS OpenHub Runtime brings the controller, local infrastructure,
+configuration, and lifecycle tooling together on infrastructure you control.
+Its core data plane combines the controller with open-source PostgreSQL,
+Eclipse Mosquitto, QuestDB, and Caddy and requires no managed cloud service.
 
-## Start here
-
-### Private preview: UNS OpenHub Runtime
-
-UNS OpenHub Runtime is the easiest way to run the complete integrated stack on
-infrastructure you control. Its core data plane combines the controller with
-open-source PostgreSQL, Eclipse Mosquitto, QuestDB, and Caddy infrastructure and
-requires no managed cloud service. Typed secret
-references can resolve from environment variables or optionally from Infisical,
-including Machine Identity-backed bootstrap. The add-on catalog can combine
-compatible public GitHub add-ons with approved services from configured GitHub
-or Azure DevOps sources. Runtime also validates service configuration against
-packaged schemas, retains per-instance snapshots, and preflights matching
-versions and configuration before starting workloads on another controller.
-
-The SDKs, supporting services, reference application, and bootstrap are public
-and available independently. The integrated Runtime is currently distributed
-through a private preview.
+The SDKs, supporting services, reference application, and bootstrap are
+public. The complete integrated Runtime is currently distributed through a
+private preview.
 
 Users with preview access can install the public, version-matched bootstrap on
 macOS or Linux:
@@ -56,30 +40,44 @@ curl -fsSL \
 "$HOME/.local/bin/uns-bootstrap" install
 ```
 
-The bootstrap verifies the matching download and starts the setup wizard.
-Docker or Podman with Compose is required. Complete installation and operating
-instructions are in the Runtime `README.md` included with the downloaded
-bundle.
+Docker or Podman with Compose is required. During the preview, Runtime access
+and private controller-image access are separate. Complete version-matched
+installation and operating instructions are included in the downloaded
+Runtime bundle.
 
 [Open Runtime documentation](https://www.uns-openhub.com/docs/).
-[Review the public bootstrap repository](https://github.com/uns-openhub/uns-openhub-bootstrap).
-Need preview access?
-[Join the email-only access list](https://www.uns-openhub.com/#early-access).
+[Review the public bootstrap](https://github.com/uns-openhub/uns-openhub-bootstrap).
+[Request preview access](https://www.uns-openhub.com/#early-access).
 
-The controller remains a component of the Runtime architecture; the planned
-public-facing distribution is `uns-openhub-runtime`, rather than a standalone
-`uns-openhub-controller` release.
+## Choose your SDK
+
+| Language | Package | Use it for |
+| --- | --- | --- |
+| TypeScript | [`@uns-kit/*`](https://www.npmjs.com/org/uns-kit) | Typed UNS applications, runtime services, metadata, and project scaffolding |
+| Python | [`uns-kit`](https://pypi.org/project/uns-kit/) | Python UNS MQTT clients, runtime services, OpenHub access, and project scaffolding |
+
+Both SDKs are developed in the public [`uns-kit`](https://github.com/uns-openhub/uns-kit)
+repository. The Python source and documentation live in
+[`packages/uns-py`](https://github.com/uns-openhub/uns-kit/tree/master/packages/uns-py).
+
+## Public components
 
 | Repository | Purpose |
 | --- | --- |
-| [`uns-kit`](https://github.com/uns-openhub/uns-kit) | TypeScript and Python toolkits, runtime libraries, and project scaffolding for UNS applications |
-| [`rtt-demo-app`](https://github.com/uns-openhub/rtt-demo-app) | Hot rolling mill simulator and end-to-end example built with `@uns-kit` |
+| [`uns-kit`](https://github.com/uns-openhub/uns-kit) | TypeScript and Python toolkits, runtime libraries, and project scaffolding |
+| [`rtt-demo-app`](https://github.com/uns-openhub/rtt-demo-app) | Seeded hot-rolling simulator and end-to-end reference application |
 | [`uns-archiver`](https://github.com/uns-openhub/uns-archiver) | QuestDB archiver for UNS data and table packets |
 | [`uns-api-global`](https://github.com/uns-openhub/uns-api-global) | Authenticated REST API for current and historical UNS data |
 | [`node-red-contrib-uns`](https://github.com/uns-openhub/node-red-contrib-uns) | Node-RED nodes for subscribing to and publishing UNS messages |
 | [`uns-openhub-bootstrap`](https://github.com/uns-openhub/uns-openhub-bootstrap) | Minimal verified installer for version-matched Runtime releases |
 
-## How the pieces fit
+The integrated controller additionally provides stable entity identity,
+namespace placement history, typed relationships, solution profiles,
+declarative domain packs, provider add-ons, schema and data-catalog tooling,
+automations, service lifecycle supervision, configuration snapshots, and
+cluster-aware workload placement.
+
+## How the public pieces fit
 
 ```text
 TypeScript, Python and Node-RED producers
@@ -92,35 +90,36 @@ TypeScript, Python and Node-RED producers
                +----------> UNS Archiver ----> QuestDB ----> UNS API Global
 ```
 
-Each public component repository documents its own prerequisites,
-configuration, and verification commands. For a first look at the open
-components, use `rtt-demo-app` as the example application and `uns-kit` as the
-TypeScript and Python library reference.
+Each public repository documents its own prerequisites, configuration, and
+verification commands. Use `rtt-demo-app` for a first end-to-end example and
+`uns-kit` as the TypeScript and Python SDK reference.
 
 ## Roadmap
 
-The open stack is planned to expand with:
+The public stack is planned to expand with:
 
-- `uns-openhub-runtime` — currently a private preview and planned as the deployable public entry point that connects the controller, local infrastructure, configuration, and lifecycle tooling.
-- `uns-bridge-mqtt` — an external MQTT mapping bridge for bringing existing third-party topic structures and payloads into a governed UNS.
+- `uns-openhub-runtime` — the current private preview and planned deployable
+  public entry point.
+- `uns-bridge-mqtt` — mapping existing third-party MQTT topics and payloads
+  into governed OpenHub context.
 - `uns-bridge-opcua` — mapping OPC UA nodes and values into the same model.
 
-Assistant capabilities are planned for a later phase. Current private
-implementation work explores cited operational guidance over live and
-historical signals, operator-reviewed schema proposals, validated TypeScript
-and Python service-bundle generation, and disabled-by-default local
-MCP-compatible tool access with scoped tokens and auditing. Public scope and
-delivery are still under review. The current private implementation uses
-OpenAI; provider and on-prem inference alternatives are being evaluated.
+Assistant capabilities are planned for a later phase as a governed consumer
+of platform context. Current private work explores cited operational guidance,
+operator-reviewed schema proposals, validated TypeScript and Python service
+generation, and disabled-by-default MCP-compatible local tool access. It
+currently uses OpenAI; provider and on-prem inference alternatives are being
+evaluated.
 
-Follow the latest overview at [www.uns-openhub.com](https://www.uns-openhub.com/#roadmap).
+Follow the current overview at
+[www.uns-openhub.com](https://www.uns-openhub.com/#roadmap).
 
 ## Participate
 
 - Read the shared [contribution guide](https://github.com/uns-openhub/.github/blob/main/CONTRIBUTING.md).
 - Report security issues privately as described in the
   [security policy](https://github.com/uns-openhub/.github/blob/main/SECURITY.md).
-- Use the issue tracker of the affected repository for bugs and focused feature
+- Use the affected repository's issue tracker for bugs and focused feature
   requests.
 
 Unless a repository says otherwise, public source is licensed under the MIT

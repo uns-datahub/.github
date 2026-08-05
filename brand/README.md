@@ -1,14 +1,14 @@
 # UNS OpenHub logo assets
 
-The final symbol combines the continuous `u` gesture with the rounded OpenHub
-bowl and a tall Hub stem. The SVG files in this directory are the optimized,
+The current mark combines a continuous `u` with the rounded OpenHub bowl and
+tall hub stem. The SVG files in this directory are the optimized,
 production-safe sources.
 
 ## Files
 
 - `uns-openhub-mark.svg` — primary dark mark on a transparent canvas
 - `uns-openhub-mark-light.svg` — light mark for dark surfaces
-- `uns-openhub-icon.svg` — square transparent icon with safe spacing
+- `uns-openhub-icon.svg` — square transparent icon
 - `uns-openhub-icon-on-dark.svg` — mint icon on the website dark background
 - `uns-openhub-wordmark.svg` — horizontal mark with editable wordmark text
 - `png/` — raster exports at common application and web sizes
@@ -20,10 +20,8 @@ production-safe sources.
 - Mint accent: `#9CF7C6`
 - Light: `#F4F7F5`
 
-Keep at least half the width of the vertical stem as clear space around the
-mark. Use the standalone mark at 24 px or larger. At 16 px, use the square
-dark-background icon so the `uh` silhouette remains legible; the open `o`
-detail is intentionally secondary at that size.
+Keep clear space around the mark and use the dark-background icon when a small
+square application icon needs stronger contrast.
 
 The wordmark text remains editable and uses Helvetica Neue with Arial as a
 fallback. Convert the text to curves in the final design application when a
