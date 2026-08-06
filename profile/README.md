@@ -2,14 +2,18 @@
   <img src="../brand/uns-openhub-wordmark.svg" alt="UNS OpenHub" width="720">
 </p>
 
-Open semantic context infrastructure for systems you control.
+Self-hosted semantic context infrastructure with open SDKs.
 
 **Website:** [www.uns-openhub.com](https://www.uns-openhub.com)
 
-UNS OpenHub connects events, live values, history, metadata, and relationships
-without forcing every source system into the same shape. Its controller keeps
-stable entity identity separate from namespace placement, makes lifecycle
-relationships queryable, and installs domain semantics on one generic core.
+UNS OpenHub combines a self-hosted Runtime with open TypeScript and Python SDKs
+for building a governed Unified Namespace. It connects live values, events,
+history, metadata, and relationships without tying an object's identity to its
+current path.
+
+The Runtime keeps stable entity identity separate from namespace placement,
+makes lifecycle relationships queryable, and installs domain semantics on one
+generic core.
 
 Manufacturing and Gaming are the current concrete domain profiles. The public
 hot-rolling demo is one end-to-end example of the model, not the boundary of
